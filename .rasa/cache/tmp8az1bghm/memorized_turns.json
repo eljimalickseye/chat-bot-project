@@ -1,0 +1,23 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJTU3MS8ltSg+Lb8oNxGktLY2FgBylCDc": "utter_demander_formation",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJTU3MS8ltSg+Lb8oNxGktJaAgaUlJUDlWPQRZXYsAKfARJw=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJTU3MS8ltSg+Lb8oNxGktJaAgaUlJUDlWPRRwWwCjk1MS8uEmxQLAJM3YOk=": "utter_affirmation",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJTU3MS8ltSg+Lb8oNxGktJaAgaUlJUDlWPRRwWwCjk1MS8skyZXIGvCbFgsArcR+7Q==": "action_listen",
+    "eJwtitEJgDAMBVfJAE7QNfwUCUUfEqippNGf0t0N6N/dcUsfE/XL8HDeXKom6h+w5hOJfinSHBrv3WDxiIZ6or2qwjiigA8E5wKex1hfHNcivw==": "utter_donner_serie_generale_S",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJT8vL7UoHiiYmRqfngpkJ+akxgfXEjC1tKQEqAuXZuJtiQUA1VJKRQ==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJT8vL7UoHiiYmRqfngpkJ+akxgfXEjC1tKQEqAuXZmrZQsDtEOOA+pMzi4GmGdXWxgIAaWVoSA==": "orienter_serie_scientifique",
+    "eJytjrEOwjAMRH8lH8DEmN/oiJAVpS6yVJw2cbpE/XcOtWJDYWC7s+6e79b2i2tL5o1CNEnqXTsEaXiyd6eZpRgrsrVwRkYU1rwbkypnwlGYHgwdZqZh71CrGVrfyv/60tl+4NCPUkC79nAJcbXPjhLfViZZK/8Cv78A3DWMJg==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJT8vL7UoHiiYmRqfngpkJ+akxvvU1sYCABy7Irg=": "utter_donner_serie_generale_L",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJT8vL7UoHiiYmRqfngpkJ+akxvvUEjC1tKQEqAuXZuJtiQUA0RVKMA==": "action_listen",
+    "eJwtitEJgDAMBVfJAE7QOfwTCUUfEqippNGf0t0N6N/dcUsfE/XL8HDeXKom6h+w5hOJfinSHBrv3WDxiIZ6or2qwjiigA8E5wKex1hfHNsiwA==": "orienter_serie_scientifique",
+    "eJyVjUsKgDAMRK/SA3iCnsOdSCh1lICm2o+b4t2NqGtxNy+8mXT1aExdI3ZyPnMQa+odSNwCax6YOWWIuiUhqsOimK0Zgggi6ZFBEzS7GdQeH6tBdV14i8lfyCNvBT9+9CdH1kmq": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhODGntCQRpKS4tjYWAJhCHiU=": "utter_salutations",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhODGntCQRpKS4loBJpSUlqUXxyBrwmxYLAGGwPHc=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhODGntCQRpKS4loBJpSUlqUXxyBooMY2Au5Ly8/JS4zNKc1NLi2prYwFL7Fk7": "utter_bonne_humeur",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhODGntCQRpKS4loBJpSUlqUXxyBooMY2Au5Ly8/JS4zNKc1NLi4hzGIoOAubFAgACn3gt": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJT8vL7UoHiiYmRqfngpkJ+akxgfXEjC1tKQEqAuXZmrZQsDtEOOA+pMzi4GmGdbWxgIAaWFoRw==": "orienter_serie_scientifique",
+    "eJytjrEOwjAMRH8lH8DCmt/oiJAVpS6yVJw2cbpE/XcOtWJDYWC7s+6e79b2i2tL5o1CNEnqXTsEaXiyd6eZpRgrsrVwRkYU1rwbkypnwlGYHgwdZqZh71CrGVrfyv/60tl+4NCPUkC79nAJcbXPjhLfViZZK/8Cv78A29CMJA==": "action_listen"
+  }
+}

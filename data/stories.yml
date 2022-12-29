@@ -1,0 +1,52 @@
+version: "3.1"
+
+stories:
+
+- story: salutations
+  steps:
+  - intent: salutations
+  - action: utter_salutations
+  - intent: bonne_humeur
+  - action: utter_bonne_humeur
+
+
+- story: initier l'orientation
+  steps:
+  - intent: demander_formation
+  - action: utter_demander_formation
+  - intent: affirmation
+  - action: utter_affirmation
+
+- story: Orientation avec les series scientifiques S
+  steps:
+  - intent: donner_serie_generale_S
+  - action: utter_donner_serie_generale_S
+  - or:
+    - intent: serie_precise_S1
+    - intent: serie_precise_S2
+  - action: orienter_serie_scientifique
+
+- story: Orientation avec les series technique T
+  steps:
+  - intent: donner_serie_generale_T
+  - action: orienter_serie_scientifique
+
+- story: Orientation avec la serie L
+  steps:
+  - intent: donner_serie_generale_L
+  - action: utter_donner_serie_generale_L
+
+# - story: Orientation avec la serie T
+#   steps:
+#   - intent: donner_serie_generale_T
+#   - action: orienter_serie_T
+
+# - story: Orientation avec la serie G
+#   steps:
+#   - intent: donner_serie_generale_G
+#   - action: orienter_serie_G
+
+# - story: proposer filiere
+#   steps:
+#   - intent: choix_domaine
+#   - action: action_domaine

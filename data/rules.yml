@@ -1,0 +1,55 @@
+version: "3.1"
+
+rules:
+
+- rule: bonne humeur
+  steps:
+  - intent: bonne_humeur
+  - action: utter_bonne_humeur
+
+- rule: Je suis Elvis
+  steps:
+  - intent: qui_es_tu
+  - action: utter_qui_es_tu
+
+- rule: Je le connais pas
+  steps:
+  - intent: qui_suis_je
+  - action: utter_qui_suis_je
+
+- rule: Elvis vas bien
+  steps:
+  - intent: demander_etat_Elvis
+  - action: utter_demander_etat_Elvis
+
+- rule: tu dois dire oui
+  steps:
+  - intent: nier
+  - action: utter_nier
+
+- rule: mauvaise humeur
+  steps:
+  - intent: mauvaise_humeur
+  - action: utter_mauvaise_humeur
+
+- rule: l'utilisateur veux que je l'oriente
+  steps:
+  - intent: demander_formation
+  - action: utter_demander_formation
+
+- rule: repondre a un utilisateur paresseux 
+  steps:
+  - intent: utilisateur_paresseux
+  - action: utter_utilisateur_paresseux
+
+- rule: donner le nombre d'universités publics
+  steps:
+  - intent: nombre_universite
+  - action: utter_nombre_universite
+
+# A chaque début de message, le chatbot se presentera
+# - rule: message de debut
+#   conversation_start: true  # this rule only applies at the beginning of a conversation
+#   steps:
+#   - intent: salutations
+#   - action: utter_bienvenue

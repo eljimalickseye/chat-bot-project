@@ -1,0 +1,46 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bonne_humeur\"}}]": "utter_bonne_humeur",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bonne_humeur\"}}, {\"prev_action\": {\"action_name\": \"utter_bonne_humeur\"}, \"user\": {\"intent\": \"bonne_humeur\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nombre_universite\"}}]": "utter_nombre_universite",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nombre_universite\"}}, {\"prev_action\": {\"action_name\": \"utter_nombre_universite\"}, \"user\": {\"intent\": \"nombre_universite\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nier\"}}]": "utter_nier",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nier\"}}, {\"prev_action\": {\"action_name\": \"utter_nier\"}, \"user\": {\"intent\": \"nier\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qui_suis_je\"}}]": "utter_qui_suis_je",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qui_suis_je\"}}, {\"prev_action\": {\"action_name\": \"utter_qui_suis_je\"}, \"user\": {\"intent\": \"qui_suis_je\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"utilisateur_paresseux\"}}]": "utter_utilisateur_paresseux",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"utilisateur_paresseux\"}}, {\"prev_action\": {\"action_name\": \"utter_utilisateur_paresseux\"}, \"user\": {\"intent\": \"utilisateur_paresseux\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_etat_Elvis\"}}]": "utter_demander_etat_Elvis",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_etat_Elvis\"}}, {\"prev_action\": {\"action_name\": \"utter_demander_etat_Elvis\"}, \"user\": {\"intent\": \"demander_etat_Elvis\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qui_es_tu\"}}]": "utter_qui_es_tu",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qui_es_tu\"}}, {\"prev_action\": {\"action_name\": \"utter_qui_es_tu\"}, \"user\": {\"intent\": \"qui_es_tu\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"mauvaise_humeur\"}}]": "utter_mauvaise_humeur",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"mauvaise_humeur\"}}, {\"prev_action\": {\"action_name\": \"utter_mauvaise_humeur\"}, \"user\": {\"intent\": \"mauvaise_humeur\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_formation\"}}]": "utter_demander_formation",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_formation\"}}, {\"prev_action\": {\"action_name\": \"utter_demander_formation\"}, \"user\": {\"intent\": \"demander_formation\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_etat_Elvis\"}}, {\"prev_action\": {\"action_name\": \"utter_demander_etat_Elvis\"}, \"user\": {\"intent\": \"demander_etat_Elvis\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nombre_universite\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qui_es_tu\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_etat_Elvis\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qui_es_tu\"}}, {\"prev_action\": {\"action_name\": \"utter_qui_es_tu\"}, \"user\": {\"intent\": \"qui_es_tu\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"mauvaise_humeur\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nier\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nier\"}}, {\"prev_action\": {\"action_name\": \"utter_nier\"}, \"user\": {\"intent\": \"nier\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nombre_universite\"}}, {\"prev_action\": {\"action_name\": \"utter_nombre_universite\"}, \"user\": {\"intent\": \"nombre_universite\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qui_suis_je\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"qui_suis_je\"}}, {\"prev_action\": {\"action_name\": \"utter_qui_suis_je\"}, \"user\": {\"intent\": \"qui_suis_je\"}}]",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"utilisateur_paresseux\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"mauvaise_humeur\"}}, {\"prev_action\": {\"action_name\": \"utter_mauvaise_humeur\"}, \"user\": {\"intent\": \"mauvaise_humeur\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"utilisateur_paresseux\"}}, {\"prev_action\": {\"action_name\": \"utter_utilisateur_paresseux\"}, \"user\": {\"intent\": \"utilisateur_paresseux\"}}]"
+    ]
+  }
+}

@@ -1,0 +1,249 @@
+version: "3.1"
+
+nlu:
+- intent: salutations
+  examples: |
+    - Bonjour
+    - Salut !
+    - Bonsoir
+    - Quoi de neuf
+
+- intent: bonne_humeur
+  examples: |
+    - ça va bien
+    - Je suis content
+    - Je suis trop content
+    - Je suis en joie!
+    - Je suis euphorique!
+    - Je suis aux anges
+    - Je me suis levé du bon pied
+    - Je suis de bonne humeur
+    - Je vais bien
+    - Je suis joyeuse aujourd’hui
+    - Je me sens bien
+    - Je me sens merveilleusement bien
+    - Je me porte bien
+    - Je me porte a merveille
+    - En pleine forme!
+    - Tres bien
+    - Genial
+    - Nickel!
+    - Ça roule!
+    - ça va
+    - Bien
+    - Super !
+
+- intent: mauvaise_humeur
+  examples: |
+    - Mal
+    - ça ne vas pas du tout
+    - ça ne vas pas
+    - Rien ne vas
+    - Je me sens mal
+    - Je me sens pas bien
+    - Je suis pas en forme
+    - Je suis pas en bonne forme
+    - Je suis de mauvaise humeur
+    - Je suis pas de bonne humeur
+    - Je suis mecontent
+    - Je suis triste
+    - Je ne vais pas bien du tout
+    - Je me suis levé du mauvais pied
+    - Fatigué
+
+- intent: demander_etat_Elvis
+  examples: |
+    - Tu vas bien ?
+    - Comment tu vas ?
+    - Comment allez-vous ?
+
+- intent: au_revoir
+  examples: |
+    - Au revoir
+    - A bientôt
+    - A tres bientôt
+    - Au plaisir de se revoir
+    - A une prochaine fois
+    - A plus
+    - A un de ces quatre
+    - A la prochaine
+    - Merci beaucoup
+    - Bonne journee
+    - Bonne soiree
+
+- intent: remercier
+  examples: |
+    - Merci
+    - Merci beaucoup
+    - Merci pour votre aide
+    - Je vous remercie
+    - Merci bien
+    - Je vous remercie pour votre aide
+    - Merci c'est gentil
+    - C'est gentil de votre part
+    - Mille merci à vous
+    - Franchement merci beaucoup
+    - Vraiment je vous remercie
+
+- intent: affirmation
+  examples: |
+    - Oui
+    - Bien sur
+    - Evidemment
+    - Exactement
+    - Effectivement
+    - Carrément
+    - Absolument
+    - Parfaitement
+    - Je confirme
+    - Sans aucun doute
+    - D'accord
+    - Allons y
+    - Ok
+    - je suis d’accord avec toi
+    - je suis tout à fait d’accord avec toi
+    - je partage votre avis
+    - Bien entendu
+    - Tout à fait
+    - Oui, c'est bon
+
+- intent: nier
+  examples: |
+    - Non
+    - Je suis pas d'accord
+    - Je ne suis pas du tout d’accord avec toi
+    - Je ne suis pas tout à fait d’accord avec toi
+    - Pas du tout
+    - Absolument pas
+    - Je voudrais exprimer un léger désaccord
+    - Je n’en suis pas sûr
+    - Je n’en suis pas certain
+    - Même pas
+
+- intent: qui_es_tu
+  examples: |
+    - Qui es tu ?
+    - A qui ai je l'honneur ?
+    - Je parle avec qui ?
+    - T'es qui toi ?
+    - Dis moi qui tu es !
+    - Est-tu humain ?
+    - Qui es-ce qui parle ?
+
+- intent: qui_suis_je
+  examples: |
+    - Qui suis-je ?
+    - Vous me conaissez ?
+    - Tu me connais ?
+    - Me connais tu ?
+    - Dis moi qui je suis !
+    - Suis-je humain ?
+    - Est ce que tu me connais ?
+
+- intent: faire_confiance
+  examples: |
+    - Puis-je te faire confiance
+    - Je peux te faire confiance ?
+    - Est ce que je peux te faire confiance
+    - Puis-je t'accorder ma confiance
+
+- intent: demander_formation
+  examples: |
+    - Je veux trouver une formation
+    - Jide moi a trouver une formation
+    - Quelle formation je peux faire
+    - Quelle formation me conseillez vous
+    - Aidez-moi a trouver une formation qui me convient
+    - Je veux une bonne formation a suivre
+    - Propose moi une formation 
+
+- intent: demande_aide
+  examples: |
+    - Je veux de l'aide
+    - Peux tu m'aider ?
+    - Aide moi
+    - Je veut que tu m'aide
+    - Aidez-moi svp
+
+# Bon ça sera un peu du charabia pour ces intensions car en realité on en a pas besoin vraiment dans les bouttons
+- intent: donner_serie_generale_S
+  examples: |
+    - scientifique
+    - science
+
+- intent: donner_serie_generale_L
+  examples: |
+    - littéraire 
+    - littérature 
+
+- intent: donner_serie_generale_T
+  examples: |
+    - technicien 
+    - technique 
+
+- intent: donner_serie_generale_G
+  examples: |
+    - gestionnaire 
+    - gestion 
+
+- intent: serie_precise_S1
+  examples: |
+    - c'est la S1
+    - les maths et les physiques y sont dures
+
+- intent: serie_precise_S2
+  examples: |
+    - ils ont trois matières de coef 5
+    - mais maths pas dures comme S1
+
+- intent: serie_precise_S3
+  examples: |
+    - bon c'est presque la meme chose que la serie C
+    - aufet c'est la C mais avec de la pratique
+
+- intent: serie_precise_L1
+  examples: |
+    - les plus beaux parleurs
+    - ont toujours le temps pour s'amuser
+
+- intent: serie_precise_L2
+  examples: |
+    - idem que precedemment
+    - zero stress comme d'hab
+
+- intent: utilisateur_paresseux
+  examples: |
+    - Pouvez-vous choisir une formation pour moi svp
+    - Choisissez pour moi
+    - Choisis moi une formation
+    - Choisis moi une bonne formation
+    - Choisissez a ma place
+
+- intent: nombre_universite
+  examples: |
+    - Combien y'a t'il d'universités publics au Sénégal ?
+    - Combien y'a d'universités publics au Sénégal ?
+    - Donne moi le nombre d'universités publics au Sénegal ?
+    - Combien y'a t'il d'universités publics ?
+    - Donne moi le nombre d'universités publics
+    - Y'as combien d'universites publics au senegal ?
+    - Je veux savoir le nombre d'université publics au Senegal
+    - Y'as combien d'universites publics au senegal
+
+
+
+# - intent: donner_serie
+#   examples: |
+#     - [S2](serie)
+#     - Je viens de la [S1](serie)
+#     - J'ai suivi la serie [s2](serie)
+#     - J'ai fais la serie [T](serie)
+#     - J'ai fais la [L2](serie)
+
+# - intent: choix_domaine
+#   examples: |
+#     - [Médecine](chosen_serie)
+#     - je veux faire la [Gestion](chosen_domain)
+#     - je souhaite faire [Physique](chosen_domain)
+  
+

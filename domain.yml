@@ -1,0 +1,182 @@
+version: "3.1"
+
+intents:
+  - salutations
+  - bonne_humeur
+  - mauvaise_humeur
+  - au_revoir
+  - affirmation
+  - remercier
+  - nier
+  - qui_es_tu
+  - qui_suis_je
+  - faire_confiance
+  - demander_formation
+  - donner_serie_generale_S
+  - donner_serie_generale_L
+  - donner_serie_generale_T
+  - donner_serie_generale_G
+  - serie_precise_S1
+  - serie_precise_S2
+  - serie_precise_S3
+  - serie_precise_L1
+  - serie_precise_L2
+  - utilisateur_paresseux
+  - demander_etat_Elvis
+  - nombre_universite
+  - donner_serie
+  # - donner_serie
+  # - choix_domaine
+
+entities:
+- serie_generale
+- serie_precise
+# - chosen_domain
+
+# S, L, T, ou G
+slots:
+  serie_generale:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: serie_generale
+
+# S1, S2, S3 par exemple si serie_generale = S
+  serie_precise:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: serie_precise
+      
+  # chosen_domain:
+  #   type: text
+  #   influence_conversation: true
+  #   mappings:
+  #   - type: from_entity
+  #     entity: chosen_domain
+
+
+
+responses:
+  utter_salutations:
+  - text: "Salut ! \nComment allez-vous?"
+  - text: "Bonjour, \nComment allez-vous?"
+  - text: "Bonsoir, \nComment allez-vous?"
+  - text: "Bonjour, \n Vous vous portez bien j'espère!"
+  - text: "Bonjour, Comment allez-vous?"
+
+  utter_bonne_humeur:
+  - text: "Super !"
+  - text: "Super alors !"
+  - text: "Exellent !"
+  - text: "Parfait !"
+  - text: "Parfait donc !"
+  - text: "C'est tres bien alors !"
+  - text: "C'est bien alors !"
+  - text: "C'est tres bien!"
+
+  utter_mauvaise_humeur:
+  - text: "Malheureusement je ne peux rien faire pour vous.\nJ'ai été crée juste pour vous aider pour la suite de vos études\nIl est important de garder à l'esprit que je suis un programme informatique\net que je ne suis pas en mesure de comprendre les sentiments humains.\nMais ne vous inquiètez pas, tout ira bien"
+
+  utter_demander_etat_Elvis:
+  - text: "Je vais super bien. Et vous ?"
+  - text: "Toujours de bonne humeur !!"
+  - text: "Je me sens fantastique!"
+  - text: "Au dessus de la lune !"
+  - text: "Je me sens très bien!"
+  - text: "Je vais très bien merci. Et toi?"
+  - text: "De mieux en mieux à chaque seconde qui passe."
+  - text: "Je me sens super bien"
+
+  utter_au_revoir:
+  - text: "Au revoir, Portez vous bien !"
+  - text: "À la prochaine.\nD'ici là portez vous bien !"
+  - text: "A bientôt!"
+  - text: "A plus tard!"
+  - text: "A plus!"
+  - text: "Bonne journée!"
+  - text: "Bonne soirée!"
+  - text: "A bientôt!\n Passez une exellente journée."
+
+  utter_qui_es_tu:
+  - text: "Je m'appelle Elvis. J'ai été crée pour vous aider à choisir dès maintenat une formation qui vous convient le mieux dans l'une des universités publics du Sénégal avant l'ouverture de la plate-forme Campusen. Je n'ai pas de forme physique ou de conscience de la même manière qu'un humain. Je suis prêt à repondre à tout vos questions pouvant vous aider sur la suite de vos études."
+    image: "https://fst.ucad.sn/sites/default/files/bande2m.PNG"
+
+  utter_qui_suis_je:
+  - text: "Désolé, mais je n'ai pas la capacité de connaître ou de reconnaître des personnes individuelles.\nMes connaissances et mes capacités sont basées sur les données\net les algorithmes sur lesquels j'ai été formé,\net je n'ai pas la capacité d'apprendre ou\nde m'adapter de la même manière qu'un humain."
+
+  utter_faire_confiance:
+  - text: "Vous pouvez me faire confiance pour fournir des informations\nprécises et fiables dans la mesure où je suis capable de les trouver.\nComme je suis un modèle de langage entraîné,\nmon but est de fournir des réponses exactes et complètes\nà vos questions dans la mesure du possible.\nDonc vous n'avez aucun soucis à vous faire."
+
+  utter_nombre_universite:
+  - text: "Il existe au total cinq(5) universités publiques au Sénégal :\nl'Université Cheikh Anta Diop de Dakar (UCAD),\nl'Université Gaston Berger de Saint-Louis (UGB),\nl'Université Iba Der THIAM de Thiès (UIDT),\nl'Université Alioune DIOP de Bambey (UADB)\net l'Université Assane Seck de Ziguinchor (UASZ) ."
+
+# Quand l'eleve demande une aide pour qu'on lui trouve une formation
+  utter_demander_formation:
+  - text: "Ne vous inquiètez pas, j'ai été créé pour ça.\nOn va trouver ensemble une formation qui vous convient le mieux\nMaintenant pour faciliter la discussion, je veux que vous repondez à mes questions.\nPour certaines de ces questions, je vais vous donner une liste \ndans la quelle vous devrai choisir une reponse.\nOn peut commencer?"
+
+# Notons bien qu'il n'y a pas d'intention initier_orientation, cette reponse est fait pour que Elvis initie l'orientation
+  utter_initier_orientation:
+  - text: "Maintenant pour faciliter la discussion afin de vous aider sur votre orientation, je veux que vous repondez à mes questions.\nPour certaines de ces questions, je vais vous donner une liste dans la quelle vous devrai choir une reponse.\nOn peut commencer?"
+
+
+# Elvis lui propose de choisir une serie generale
+  utter_affirmation:
+  - text: "Allons y donc!\nVous venez de quelle serie ?"
+    buttons:
+    - title: "S"
+      payload: '/donner_serie_generale_S{{"serie_generale":"S"}}'
+    - title: "L"
+      payload: '/donner_serie_generale_L{{"serie_generale":"L"}}'
+    - title: "T"
+      payload: '/donner_serie_generale_T{{"serie_generale":"T"}}'
+    - title: "G"
+      payload: '/donner_serie_generale_G{{"serie_generale":"G"}}'
+
+# L'eleve doit choisir une des series S suivante si l'intention est donner_serie_generale_S
+  utter_donner_serie_generale_S:
+  - text: "Ah vous êtes donc un scientifique !!\nMaintenant dites moi de quelle serie S précisement?"
+    buttons:
+    - title: "S1"
+      payload: '/serie_precise_S1{{"serie_precise":"S1"}}'
+    - title: "S2"
+      payload: '/serie_precise_S2{{"serie_precise":"S2"}}'
+    - title: "S3"
+      payload: '/serie_precise_S3{{"serie_precise":"S3"}}'
+
+ # L'eleve doit choisir une des series L suivante si l'intention est donner_serie_generale_L 
+  utter_donner_serie_generale_L:
+  - text: "Vous êtes donc un littéraire\nMaintenant dites moi de quelle serie L précisement?"
+    buttons:
+    - title: "L1"
+      payload: '/serie_precise_L1{{"serie_precise":"L1"}}'
+    - title: "L2"
+      payload: '/serie_precise_L2{{"serie_precise":"L2"}}'
+
+  utter_donner_serie_precise:
+  - text: "Vous avez donné la serie precise" 
+
+  utter_nier:
+  - text: "Désolé, mais c'est la seule manière dont je peux vous aider.\nC'est avec ces questions que je parviendrai à determiner quelle est\nla fomation qui convient le mieux à votre parcours au Lycée.\nVous êtes d'accord maintenant?"
+
+  utter_utilisateur_paresseux:
+  - text: "Désolé, mais je ne peux pas prendre ce risque et ne laissez aussi personne
+   choisir à votre place.\nN'oubliez pas que cette décision est d'une importance capitale
+   et va vous suivre tout au long de votre carrière.\nDonc c'est à vous et à vous seule que
+   revient la décision finale.\nUne fois la platform campusen ouverte, regardez bien les formations
+   que je vous ai proposé et choisissez\nen fonction de ce que vous voulez devenir plutard."
+
+
+
+  # utter_bienvenue:
+  # - text: "Bonjour, je m'appelle Orion \nJe suis là pour vous aider à trouver une formation"
+
+actions:
+- orienter_serie_scientifique
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
